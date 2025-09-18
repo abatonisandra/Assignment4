@@ -29,7 +29,19 @@ public class ShapeCalculator{
 
             case 3:
                 System.out.print("Enter base of the triangle");
+                double base = scanner.nextDouble();
+                System.out.print("Enter height of the triangle: ");
+                double height = scanner.nextDouble();
+                shape = new Triangle(base, height);
+                break;
+
+            default:
+                System.out.println("Invalid choice");
+                System.exit(0);
 
         }
+        System.out.println("The area is: " + shape.calculateArea());
+        scanner.close();
+
     }
 }
