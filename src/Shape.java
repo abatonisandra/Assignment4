@@ -1,7 +1,7 @@
 abstract class Shape {
 abstract double calculateArea();
 }
-class circle extends shape{
+class circle extends Shape{
     private double radius;
 
     public circle(double radius){
@@ -27,7 +27,7 @@ class Rectangle extends Shape{
 class triangle extends Shape{
     private double base, height;
 
-    public Triangle(double base, double height){
+    public triangle(double base, double height){
         this.base = base;
         this.height = height;
     }
